@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema padrão, aplicado em todo o projeto. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/background</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Para o correto enquadramento do AppBarLayout. -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--
+        Utilizado para a correta apresentação de menus de pop-up. Apesar de
+        não utilizarmos menus de topo aqui, vamos continuar com este tema, pois
+        é algo comum em qualquer componente Toolbar quando em layout.
+    -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Para uso de fonte customizada no título do Toolbar. -->
+    <style name="AppTheme.CustomFont" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/josefin_slab</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <!-- Para o statusBar ficar transparente. -->
+    <style
+            name="AppTheme.NoActionAndStatusBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item
+                name="android:windowTranslucentStatus"
+                tools:targetApi="kitkat">
+            true
+        </item>
+    </style>
+
+    <!-- Para os rótulos dos conteúdos em texto da atividade de detalhes. -->
+    <style name="AppTheme.TextViewLabels">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingMultiplier">1.29</item>
+    </style>
+
+    <!-- Para os conteúdos em texto da atividade de detalhes. -->
+    <style name="AppTheme.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:lineSpacingMultiplier">1.29</item>
+    </style>
+</resources>
